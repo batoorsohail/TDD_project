@@ -1,6 +1,14 @@
 require './solver'
 
 describe Solver do
+  describe '#reverse' do
+    it 'Should reverse word'do
+      solver = Solver.new
+      reverse = solver.reverse('hello')
+      expect(reverse).to eq 'olleh'
+    end
+  end
+
   describe '#fizzbuzz' do
     it 'Should return fizz' do
       solver = Solver.new

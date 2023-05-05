@@ -1,4 +1,8 @@
 class Solver
+  def reverse(word)
+    
+  end
+
   def fizzbuzz(num)
     if (num % 15).zero?
       'fizzbuzz'
