@@ -1,6 +1,10 @@
 class Solver
   def reverse(word)
-    
+    if word.length == 1
+      return word
+    else
+      return word[-1] + reverse(word[0..-2])
+    end
   end
 
   def fizzbuzz(num)
