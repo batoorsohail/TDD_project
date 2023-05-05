@@ -1,15 +1,15 @@
 class Solver
   def reverse(word)
-    if word.length == 1
-      return word
+      return word if word.length == 1
     else
-      return word[-1] + reverse(word[0..-2])
+      word[-1] + reverse(word[0..-2])
     end
   end
 
   def factorial(num)
     return 1 if num.zero?
-    num * factorial(num-1)
+
+    num * factorial(num - 1)
   end
 
   def fizzbuzz(num)

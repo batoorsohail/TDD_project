@@ -2,7 +2,7 @@ require './solver'
 
 describe Solver do
   describe '#reverse' do
-    it 'Should reverse word'do
+    it 'Should reverse word' do
       solver = Solver.new
       reverse = solver.reverse('hello')
       expect(reverse).to eq 'olleh'
@@ -10,7 +10,7 @@ describe Solver do
   end
 
   describe '#factorail' do
-    it 'should return 120' do
+      it 'should return 120' do
       solver = Solver.new
       result = solver.factorial(5)
       expect(result).to eq(120)
@@ -21,7 +21,7 @@ describe Solver do
       result = solver.factorial(10)
       expect(result).to eq(3_628_800)
     end
-    end
+  end
 
   describe '#fizzbuzz' do
     it 'Should return fizz' do
