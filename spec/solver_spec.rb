@@ -10,7 +10,7 @@ describe Solver do
   end
 
   describe '#factorail' do
-      it 'should return 120' do
+    it 'should return 120' do
       solver = Solver.new
       result = solver.factorial(5)
       expect(result).to eq(120)

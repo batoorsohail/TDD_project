@@ -1,9 +1,8 @@
 class Solver
   def reverse(word)
-      return word if word.length == 1
-    else
-      word[-1] + reverse(word[0..-2])
-    end
+    return word if word.length == 1
+
+    word[-1] + reverse(word[0..-2])
   end
 
   def factorial(num)
